@@ -1,20 +1,38 @@
-# after cloning the repo
-# Getting Started
+## Table of Contents
+- [Porject Setup](#project)
+- [Features](#features)
+- [Completed task](#completed_ask)
+
+## Porject
+1. Clone the repository:
+
+```bash
+git clone https://github.com/arshiadutta07/MiniPeerFives.git
+cd Mini_PeerFives
+```
+
 
 cd BackEnd
-npm install
-npm start 
+- npm i
+- npm start
 
-# Completed
-Made BackEnd API's 
+# new terminal
 
-Create New User
-Edit New User
-Get all users
-Get Particular users
-Get P5 History
-Delete particular tranaction
-Get All Rewards
-Create rewards
+cd FrontEnd
+- npm i
+- npm start
 
-We can access these API's using Postman.
+## Features
+- Create, edit, and view user profiles
+- Give and receive P5 points
+- View P5 and reward history
+- Create and view rewards history
+
+## Completed task
+- Implemented Backend API for creating, editing, and viewing users.
+- Implemented Backend API for P5(Points given) - Create, Read, Delete.
+- Implemented Backend API for Rewards(Points received) - Read.
+- Created basic FrontEnd structure with Angular 17.
+- Implemented User List View, Create New User, and View User components in Frontend.
+- Implemented P5 History and Reward History components in the Frontend.
+- Implemented New Reward component with basic form layout.

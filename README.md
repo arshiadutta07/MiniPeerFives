@@ -1,7 +1,7 @@
 ## Table of Contents
 - [Project Setup](#project)
 - [Features](#features)
-- [Completed task](#completed_task)
+- [Completed task](#completed-task)
 
 ## Project
 1. Clone the repository:

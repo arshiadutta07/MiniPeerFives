@@ -1,9 +1,9 @@
 ## Table of Contents
-- [Porject Setup](#project)
+- [Project Setup](#project)
 - [Features](#features)
-- [Completed task](#completed_ask)
+- [Completed task](#completed_task)
 
-## Porject
+## Project
 1. Clone the repository:
 
 ```bash

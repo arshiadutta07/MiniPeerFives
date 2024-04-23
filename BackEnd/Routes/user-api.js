@@ -14,7 +14,7 @@ router.get("/getAllUsers", async(req, res) => {
         console.log(ex);
         result.error = `Internal Server Error - ${ex.message ? ex.message : ex}`;
         res.status(500).send(result);
-    }
+}
 })
 
 //Get Particular User

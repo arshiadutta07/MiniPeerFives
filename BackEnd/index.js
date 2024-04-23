@@ -1,8 +1,10 @@
 const express = require("express");
+const cors = require('cors');
 const app = express();
 const port = 4000;
 require('./DB/database-connection');
 const routes = require('./Routes/api-collection');
+app.use(cors({ origin: 'http://localhost:4200' }));
 
 //Parsing SON Data
 app.use(express.json());

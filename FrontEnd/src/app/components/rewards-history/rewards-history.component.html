@@ -1,0 +1,26 @@
+    <div class="buttonContainer">
+        <button class = "create-user-button">Reward Balance - {{rewardsBalance}}</button>
+    </div>
+    <table class = "user-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Date-Time</th>
+          <th>P5 Given</th>
+          <th>User Name</th>
+        </tr>
+      </thead>
+      <tbody>
+      @for (reward of rewardsHistoryData; track reward; let index = $index) {
+       <tr>
+          <td>{{ index + 1 }}</td>
+          <td>{{ reward.dateTime?.toString() | date:'yyyy-MM-dd HH:mm:ss a' }}</td>
+          <td>{{ reward.rewardsRecieved }}</td>
+          <td>{{ reward.userName }}</td>
+        </tr>
+      }
+      </tbody>
+    </table>
+    
+  
+

@@ -1,0 +1,54 @@
+.user-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .user-form label {
+    margin-bottom: 8px;
+  }
+  
+  .user-form input {
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .user-form button {
+    padding: 8px 16px;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+  
+  .create-user-button {
+    background-color: #007bff; /* Blue */
+    border: none;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .create-user-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-button {
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .login-button:hover {
+    background-color: darkred;
+  }
+  
+  .balance-button {
+    background-color: orange;
+    border: none;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .balance-button:hover {
+    background-color: orange;
+  }

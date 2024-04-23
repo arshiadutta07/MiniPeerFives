@@ -1,0 +1,26 @@
+<div class="reward-form-container">
+  <h2>Create Reward</h2>
+  <form class="reward-form" (ngSubmit)="submitForm()" #rewardForm="ngForm">
+    <div class="form-group">
+      <label for="recipient">Select Recipient:</label>
+      <select id="recipient" name="recipient" [(ngModel)]="selectedRecipient" required>
+        <option *ngFor="let user of users" [value]="user._id">{{ user.name }}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="amount">Amount (Max: 100):</label>
+      <input class="form-control" type="number" id="amount" name="amount" [(ngModel)]="amount"
+             min="1" max="100" required>
+      <div class="error-message" *ngIf="rewardForm.controls['amount'].invalid && (rewardForm.controls['amount'].dirty || rewardForm.controls['amount'].touched)">
+        Amount must be between 1 and 100.
+      </div>
+    </div>
+    <div class="form-group">
+      <p>P5 Balance: {{ currentUserP5Balance }}</p>
+    </div>
+    <button class="submit-button" type="submit" [disabled]="rewardForm.invalid || amount > currentUserP5Balance">
+      Submit
+    </button>
+    <button class="cancel-button" type="button" (click)="cancel()">Cancel</button>
+  </form>
+</div>

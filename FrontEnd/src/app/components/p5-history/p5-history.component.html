@@ -1,0 +1,28 @@
+  <div class="buttonContainer apart">
+    <button class = "create-user-button" [routerLink] = "['/',id,'rewards','new']" >Create New Reward</button>
+    <button class = "create-user-button">P5 Balance - {{p5Balance}}</button>
+  </div>
+  <table class = "user-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Date-Time</th>
+          <th>P5 Given</th>
+          <th>User Name</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+      @for (p5 of p5HistoryData; track p5; let index = $index) {
+       <tr>
+          <td>{{ index + 1 }}</td>
+          <td>{{ p5.dateTime?.toString() | date:'yyyy-MM-dd HH:mm:ss a' }}</td>
+          <td>{{ p5.P5given }}</td>
+          <td>{{ p5.userName }}</td>
+          <td><button class="login-button" (click)="delete(p5.id)">Delete</button></td>
+        </tr>
+      }
+      </tbody>
+    </table>
+    
+  

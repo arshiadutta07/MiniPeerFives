@@ -1,0 +1,8 @@
+<div class="user-form">
+    <label for="name">Name:</label>
+    <input type="text" [(ngModel)]="userName">
+    <button class = "create-user-button" (click)="saveUser()">Save</button>
+    <button class = "login-button" (click)="cancel()">Cancel</button>
+    <button *ngIf="showp5Balance" class = "balance-button" [routerLink] = "['/', userId, 'p5']">P5 Balance</button>
+    <button *ngIf="showRewardBalance" class = "balance-button" [routerLink] = "['/', userId, 'rewards']">Rewards Balance</button>
+</div>
